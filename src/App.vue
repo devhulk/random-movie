@@ -39,7 +39,7 @@ async function clickButton() {
 </script>
 
 <template>
-  <main>
+  <div class="container">
     <div>
     <img v-bind:src="state.imageURL" >
     </div>
@@ -48,12 +48,26 @@ async function clickButton() {
       <p>{{state.overview}}</p>
     </div>
     <button class="button" @click="clickButton">What are we watching tonight?</button>
-  </main>
+  </div>
 </template>
 
 <style scoped>
 
+.container {
+  font-family: arial;
+  font-size: 24px;
+  margin: 25px;
+  width: 80vh;
+  height: 100vh;
+}
+
+img {
+  border: 5px solid #555;
+}
+
+
 .button {
+
   background-color: #555555; /* Green */
   border: none;
   color: white;
