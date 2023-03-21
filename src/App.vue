@@ -40,9 +40,6 @@ async function clickButton() {
 
 <template>
   <div>
-  <!-- <video id="background-video" autoplay loop muted poster="">
-    <source src='@/assets/Globe_by_milkinside.mp4' type="video/mp4">
-  </video> -->
     <div class="container">
       <img v-bind:src="state.imageURL" >
         <h2 id="header">{{state.original_title}}</h2>
