@@ -27,3 +27,15 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Current Features
+
+Click "what are we watching tonight?" button and a random movie will be generated with photo and description.
+
+### Future Features
+
+Show users where they can watch the movie. https://developers.themoviedb.org/3/movies/get-movie-watch-providers
+Show users movie reviews. https://developers.themoviedb.org/3/movies/get-movie-reviews
+
+
+
