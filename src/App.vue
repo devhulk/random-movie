@@ -12,7 +12,7 @@ overview: "",
 // Set API endpoint URL and API key
 const baseImageURL = "https://image.tmdb.org/t/p/w500/"
 const endpointUrl = "https://api.themoviedb.org/3/discover/movie";
-const apiKey = "f9aacd62dbeec01897d2ebc2cb51ab21";
+const apiKey = import.meta.env.VITE_TMDBKEY;
 
 
 
