@@ -39,35 +39,56 @@ async function clickButton() {
 </script>
 
 <template>
-  <div class="container">
-    <div>
-    <img v-bind:src="state.imageURL" >
+  <div>
+  <!-- <video id="background-video" autoplay loop muted poster="">
+    <source src='@/assets/Globe_by_milkinside.mp4' type="video/mp4">
+  </video> -->
+    <div class="container">
+      <img v-bind:src="state.imageURL" >
+        <h2 id="header">{{state.original_title}}</h2>
+        <p id="description">{{state.overview}}</p>
+      <button class="button" @click="clickButton">What are we watching tonight?</button>
     </div>
-    <div>
-      <h2>{{state.original_title}}</h2>
-      <p>{{state.overview}}</p>
-    </div>
-    <button class="button" @click="clickButton">What are we watching tonight?</button>
+
   </div>
 </template>
 
 <style scoped>
 
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
 .container {
-  font-family: arial;
+  font-family: roboto;
   font-size: 24px;
   margin: 25px;
-  width: 80vh;
+  width: 40vh;
   height: 100vh;
+  text-align: center;
+}
+
+
+p {
+
 }
 
 img {
   border: 5px solid #555;
+  width: 40vh;
 }
 
 
 .button {
 
+  text-align: center;
   background-color: #555555; /* Green */
   border: none;
   color: white;
@@ -76,5 +97,7 @@ img {
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
+  margin-top: 20px;
+  width: 40vh;
 }
 </style>
